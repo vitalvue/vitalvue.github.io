@@ -4,8 +4,8 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<div class="region bottom bar">
-<h2>Vital Vue Loading ...</h2>
+	<div id="bbb">
+<h3> Vital Vue Loading ...</h3>
 	</div>
 <div id="m2"></div>
 <script>
@@ -14,7 +14,7 @@ var j = 0;
 var photo = ["health.png","thermometer.png","pressure.png"];
 function myLoop() {         //  create a loop function
   setTimeout(function() {   //  call a 3s setTimeout when the loop is called
-	  document.getElementById("m2").innerHTML = "<img src=\"https://kabary.github.io/" + photo[j]+ "\" height=\"300px\" width=\"300px\">" 
+	  document.getElementById("m2").innerHTML = "<img src=\"https://kabary.github.io/" + photo[j]+ "\" align=\"right\" height=\"300px\" width=\"300px\">" 
     i++;                    //  increment the counter
     j++;
     if (i < i+1) {           //  if the counter < 10, call the loop function
@@ -26,5 +26,6 @@ function myLoop() {         //  create a loop function
 
 myLoop();                   //  start the loop
 </script>
+<div id="m2"><img src ="progress.png" align="left" height="700px" width="1000px"></div>
 </body>
 </html> 

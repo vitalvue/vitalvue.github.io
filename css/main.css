@@ -238,16 +238,21 @@ sup {
 
 #m2 {
  top: 35%;
- right: 50%;
+ right: 0%;
  text-align: center;
 }
 
-.region.m3 {
+#m3 {
  top: 35%;
- right:35%;
+ right:80%;
  text-align: center;
 }
 
+#bbb {
+  position: absolute;
+  right:0%;
+  bottom: 0px;
+}
 .region.m4 {
  top:35%;
  right:20%;
