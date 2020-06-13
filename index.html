@@ -1,1 +1,30 @@
-Hello
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="region bottom bar">
+<h2>Virtual Vue</h2>
+	</div>
+<div id="m2"></div>
+<script>
+var i = 0;                  //  set your counter to 1
+var j = 0;
+var photo = ["health.png","thermometer.png","pressure.png"];
+function myLoop() {         //  create a loop function
+  setTimeout(function() {   //  call a 3s setTimeout when the loop is called
+	  document.getElementById("m2").innerHTML = "<img src=\"https://kabary.github.io/" + photo[j]+ "\" height=\"300px\" width=\"300px\">" 
+    i++;                    //  increment the counter
+    j++;
+    if (i < i+1) {           //  if the counter < 10, call the loop function
+	if( j > 2) j = 0;
+      myLoop();             //  ..  again which will trigger another 
+    }                       //  ..  setTimeout()
+  }, 2000)
+}
+
+myLoop();                   //  start the loop
+</script>
+</body>
+</html> 
